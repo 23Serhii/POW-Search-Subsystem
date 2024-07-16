@@ -1,0 +1,11 @@
+{
+  "editor.formatOnSave": true,
+  "prettier.singleQuote": true,
+  "prettier.arrowParens": "avoid",
+  "prettier.jsxSingleQuote": true,
+  "prettier.trailingComma": "none",
+  "javascript.preferences.quoteStyle": "single",
+  "terminal.integrated.env.linux": {
+    "NODE_OPTIONS": "--openssl-legacy-provider"
+  }
+}

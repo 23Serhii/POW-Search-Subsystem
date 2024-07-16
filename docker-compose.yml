@@ -1,0 +1,16 @@
+version: '3'
+services:
+  client:
+    build: client
+    ports:
+      - '8080:8080'
+  server:
+    build: server
+    environment:
+      - PORT=3000
+      - BASE_API_URL=api
+      - CLIENT_URL=http://localhost:8080
+      - JWT_SECRET=superkey123
+      - MONGO_URI=mongodb+srv://uantredogbusiness:Tmxn6w3t1@cluster0.mxhp2f3.mongodb.net/
+    ports:
+      - '3000:3000'
